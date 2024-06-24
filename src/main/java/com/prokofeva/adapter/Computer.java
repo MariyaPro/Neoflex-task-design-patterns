@@ -6,7 +6,11 @@ public class Computer {
         System.out.println("Компьютер включен.");
     }
 
-    public void read(Usb usb){
-        System.out.println("Компьютер читает информацию с " + usb.getNameSource()+".");
+    public void read(Usb usb) {
+        if (usb == null || usb.readData() == null) {
+            throw new IllegalArgumentException("Ошибка чтения данных с USB устройства.");
+        }
+
+        System.out.println("Компьютер читает информацию с " + usb.getNameSource() + ": " + usb.readData());
     }
 }

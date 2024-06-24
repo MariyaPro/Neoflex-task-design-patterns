@@ -9,9 +9,13 @@ public class UsbAdapter implements Usb {
         System.out.println("Карта памяти в usb-адаптере.");
     }
 
-
     @Override
     public String getNameSource() {
         return memoryCard.getName() + " через usb-адаптер";
+    }
+
+    @Override
+    public String readData() {
+        return memoryCard.getData();
     }
 }

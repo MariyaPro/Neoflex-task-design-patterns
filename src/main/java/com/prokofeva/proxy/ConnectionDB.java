@@ -1,14 +1,11 @@
 package com.prokofeva.proxy;
 
-public class ConnectionDB {
+public class ConnectionDB implements Connection {
 
-    private final String nameDB;
-
-    public ConnectionDB(String nameDB) {
-        this.nameDB = nameDB;
+    public ConnectionDB() {
     }
 
-    public void connect() {
-        System.out.println(nameDB);
+    public void connect(String url) {
+        System.out.println("подключено к " + url);
     }
 }
