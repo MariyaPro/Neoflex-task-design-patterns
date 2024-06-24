@@ -5,6 +5,7 @@ import com.prokofeva.adapter.*;
 import com.prokofeva.factory.Coffee;
 import com.prokofeva.factory.CoffeeEnum;
 import com.prokofeva.factory.CoffeeFactory;
+import com.prokofeva.proxy.Connection;
 import com.prokofeva.proxy.ConnectionDBProxy;
 import com.prokofeva.singelton.Logger;
 
@@ -29,7 +30,9 @@ public class Main {
 //        именно его через фабрику. (espresso, americano)
         CoffeeFactory coffeeFactory = new CoffeeFactory();
         Coffee coffee1 = coffeeFactory.getCoffee(CoffeeEnum.AMERICANO);
+        coffee1.prepare();
         Coffee coffee2 = coffeeFactory.getCoffee(CoffeeEnum.ESPRESSO);
+        coffee2.prepare();
 
 //        - Adapter Компьютер может читать информацию только с USB,
 //                нужно прочитать через usb адаптер информацию с карты
@@ -43,10 +46,10 @@ public class Main {
 
 //        - Proxy Создание класса который хранит название бд и
 //        "подключается" к ней по полному url. Подключаться через proxy,
-//                который добавляет к названию полный адрес. (через proxy
+//         который добавляет к названию полный адрес. (через proxy
 //        обращаюсь к названию бд, вижу строчку подключено
 //        localhost:port/название бд)
-        ConnectionDBProxy connectionDBProxy = new ConnectionDBProxy("название БД");
-        connectionDBProxy.connect();
+        Connection connection = new ConnectionDBProxy();
+        connection.connect("название БД");
     }
 }

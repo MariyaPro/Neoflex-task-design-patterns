@@ -4,28 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9632baad-d83c-47a2-ae3f-3b9509d2b4db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/MemoryCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/Usb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/UsbAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/UsbDevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Americano.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Coffee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/CoffeeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/CoffeeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Espresso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/proxy/ConnectionDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/proxy/ConnectionDBProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/singelton/Logger.java" afterDir="false" />
+    <list default="true" id="9632baad-d83c-47a2-ae3f-3b9509d2b4db" name="Changes" comment="Neoflex task &quot;design patterns&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/proxy/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proxy.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/MemoryCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/MemoryCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/Usb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/Usb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/UsbAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/UsbAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/UsbDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/adapter/UsbDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Americano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Americano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Coffee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/CoffeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/CoffeeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Espresso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/factory/Espresso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/proxy/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/proxy/ConnectionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/prokofeva/proxy/ConnectionDBProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/prokofeva/proxy/ConnectionDBProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +30,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -59,7 +71,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -87,6 +99,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -107,11 +123,36 @@
       <option name="presentableId" value="Default" />
       <updated>1716759598584</updated>
       <workItem from="1716759599633" duration="7358000" />
-      <workItem from="1716787168002" duration="3285000" />
+      <workItem from="1716787168002" duration="4105000" />
+      <workItem from="1719094720306" duration="3224000" />
+      <workItem from="1719181192989" duration="4672000" />
     </task>
+    <task id="LOCAL-00001" summary="Neoflex task &quot;design patterns&quot;">
+      <option name="closed" value="true" />
+      <created>1716791520186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716791520186</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Neoflex task &quot;design patterns&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Neoflex task &quot;design patterns&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jrt:///usr/lib/jvm/java-1.19.0-openjdk-amd64!/java.base/java/util/concurrent/CancellationException.class</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
